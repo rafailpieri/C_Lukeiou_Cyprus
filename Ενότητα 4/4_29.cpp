@@ -40,6 +40,9 @@ fout<<"Days with max temperature:"<<endl;
         fout<<i+1<<endl;
 
     }
+    
+    fin.close();
+    fout.close();
 
 }
 
