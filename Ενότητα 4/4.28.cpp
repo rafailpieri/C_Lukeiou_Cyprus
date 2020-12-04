@@ -1,13 +1,13 @@
 #include <iostream>
 #include<fstream>
-#define N 7
 #include<iomanip>
+
+#define N 7
+
 using namespace std;
 
 ifstream fin ("in.txt");
 ofstream fout("out.txt");
-
-int i=0;
 
 void FillData(float arr1[]){
 
@@ -34,11 +34,11 @@ void Calculate(float arr1[],float arr2[],float arr3[],float sum[]){
 void Print(float arr1[],float arr2[],float arr3[],float sum[]){
 
 
-int c=1;
+//int c=1;
     for(int i=0;i<N;i++){
 
-       fout<<"Total earnigs of day "<<c<<": "<<sum[i]<<"€"<<endl;
-       c++;
+       fout<<"Total earnigs of day "<<i+1<<": "<<sum[i]<<"€"<<endl;
+      //c++; Less variables easier to track bugs
     }
 
 fout.close();
