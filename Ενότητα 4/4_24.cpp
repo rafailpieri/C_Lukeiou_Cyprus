@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int min3(int a,int b,int c){
+int max3(int a,int b,int c){
 
     if(a>b&&a>c)
         return a;
@@ -22,7 +22,7 @@ int num1,num2,num3,max;
     cout<<"Dose 3 arithmus"<<endl;
     cin>>num1>>num2>>num3;
 
-    max= min3(num1,num2,num3);
+    max= max3(num1,num2,num3);
 
    cout<<"O megaliteros arithmos einai: "<<max;
 
